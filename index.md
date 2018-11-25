@@ -1,11 +1,6 @@
----
-Matthew Connelly's Developer Page
-...
+# MattConn.io
+## Matthew Connelly's Developer Page
 
-<h1>MattConn.io</h1>
-<h2>Matthew Connelly's Developer Page</h2>
-
-\ 
 
 [ Résumé: [PDF](storage/resume-2018.pdf) | [HTML](storage/resume-2018.html)] [ [GitHub](https://github.com/mattConn/) ] [ [LinkedIn](https://www.linkedin.com/in/matconn/) ] [ [Old Blog Posts](https://github.com/mattConn/mattconn.github.io/tree/master/old-blog-posts) ]
 
