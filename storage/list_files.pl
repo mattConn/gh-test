@@ -1,5 +1,5 @@
-print "# Storage";
+print "# Storage\n";
 while(<*>)
 {
-	print "- [$_]($_)";
+	print "- [$_]($_)\n";
 }
