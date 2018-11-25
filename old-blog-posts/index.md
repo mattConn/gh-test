@@ -1,0 +1,13 @@
+# Old Blog Posts
+- [2016-08-28-custom-addthis-setup.md](2016-08-28-custom-addthis-setup.md)
+- [2016-12-17-chromebook-web-development.md](2016-12-17-chromebook-web-development.md)
+- [2016-5-12-animating-with-greensock.md](2016-5-12-animating-with-greensock.md)
+- [2017-01-02-nginx-php-parsing-in-html.md](2017-01-02-nginx-php-parsing-in-html.md)
+- [2017-03-18-chromebook-linux.md](2017-03-18-chromebook-linux.md)
+- [2017-04-07-text-based-level-editing-phaser-js.md](2017-04-07-text-based-level-editing-phaser-js.md)
+- [2017-08-02-hosting-git-repos-with-a-web-frontend.markdown](2017-08-02-hosting-git-repos-with-a-web-frontend.markdown)
+- [2018-04-20-extra-steps-needed-for-setting-up-octopress-github-pages.markdown](2018-04-20-extra-steps-needed-for-setting-up-octopress-github-pages.markdown)
+- [2018-05-01-pattern-in-quotients-of-seven-and-pi.markdown](2018-05-01-pattern-in-quotients-of-seven-and-pi.markdown)
+- [2018-05-31-your-name-as-a-number.markdown](2018-05-31-your-name-as-a-number.markdown)
+- [index.md](index.md)
+- [list_files.pl](list_files.pl)
