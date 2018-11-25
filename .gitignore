@@ -1,0 +1,7 @@
+*.swp
+
+# LaTex ignore
+*.aux
+*.log
+*.out
+*.synctex.gz
