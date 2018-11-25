@@ -1,7 +1,5 @@
-print "<html><body><ul>";
-print "<h2>Storage</h2>";
+print "# Storage";
 while(<*>)
 {
-	print "<li><a href=\"./$_\">$_</a></li>"; 
+	print "- [$_]($_)";
 }
-print "</ul></body></html>";
