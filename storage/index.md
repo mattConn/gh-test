@@ -6,3 +6,4 @@
 - [resume-2018.html](resume-2018.html)
 - [resume-2018.pdf](resume-2018.pdf)
 - [resume-2018.tex](resume-2018.tex)
+- [wishlist.md](wishlist.md)
