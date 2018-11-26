@@ -1,4 +1,4 @@
-# wishlist
+# Wishlist
 
 - iphone airpods
 - xbox one controller
