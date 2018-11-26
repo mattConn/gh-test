@@ -1,5 +1,6 @@
 # Storage
 - [apt-get-install-packages](apt-get-install-packages)
+- [bashrc](bashrc)
 - [index.md](index.md)
 - [list_files.pl](list_files.pl)
 - [makefile](makefile)
