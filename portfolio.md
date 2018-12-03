@@ -1,9 +1,9 @@
 ---
-title: List of Work
+title: Portfolio
 description: A list of recent work and technologies used.
 ---
 
----
+## Portfolio
 
 ### Charlie Article "TL;DR"
 <a href="http://helloitscharlie.com/tldr" target="_blank">http://helloitscharlie.com/tldr</a>
