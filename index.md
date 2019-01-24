@@ -10,4 +10,4 @@ I enjoy programming in C++, JavaScript, Julia and Python.
 
 Source code for this website <a href="https://github.com/mattConn/mattconn.github.io">here</a>.
 
-Contact: <a href="mailto:matthew.b.connelly@gmail.com">matthew.b.connelly@gmail.com</a>
+Contact: matthew.b.connelly[at]gmail.com
