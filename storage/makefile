@@ -1,6 +1,6 @@
 # resume makefile to make pdf and html versions
 
-RESUME = resume-2018
+RESUME = resume-2019
 
 $(RESUME).pdf : $(RESUME).tex
 	pdflatex $^
