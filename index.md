@@ -8,7 +8,7 @@ I’m a software developer with a BS in Communications from The College of State
 
 I'm currently looking for a software developer internship, so please contact me at the email below if you're interested in working with me.
 
-I enjoy programming in C++, JavaScript, Julia and Python. I'm currenlty working on a couple of personal projects: a <a href="https://github.com/mattConn/static-site-generator">static site generator</a> and a <a href="https://github.com/mattConn/sdl-game">2d game engine</a> using SDL2. I also did an independent study on <a href="https://github.com/mattConn/differential-geometry-exercises">differential geometry</a> in Fall 2018.
+I can program in C/C++, JavaScript, and Python, and enjoy learning new things whenever I can. I'm currenlty working on a couple of personal projects: a <a href="https://github.com/mattConn/cssg">static site generator</a> written in C and a <a href="https://github.com/mattConn/sdl-game">2D game engine</a> written in C++ that uses SDL2. I also did an independent study on <a href="https://github.com/mattConn/differential-geometry-exercises">differential geometry</a> in Fall 2018.
 
 
 Source code for this website <a href="https://github.com/mattConn/mattconn.github.io">here</a>.
