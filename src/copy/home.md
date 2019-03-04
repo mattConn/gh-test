@@ -5,6 +5,6 @@ I'm currently looking for a software developer internship, so please contact me 
 I enjoy programming in C/C++, JavaScript, Python, and learning new things whenever I can. I'm currently working on a couple of personal projects: a <a href="https://github.com/mattConn/cssg">static site generator</a> written in C and a <a href="https://github.com/mattConn/sdl-game">2D game engine</a> written in C++ that uses SDL2. I also did an independent study on <a href="https://github.com/mattConn/differential-geometry-exercises">differential geometry</a> in Fall 2018.
 
 
-Source code for this website <a href="https://github.com/mattConn/mattconn.github.io">here</a>.
+Source code for this website <a href="https://github.com/mattConn/mattconn.io">here</a>.
 
 Contact: matthew.b.connelly[at]gmail.com
