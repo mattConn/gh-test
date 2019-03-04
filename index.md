@@ -1,3 +1,0 @@
-# Matthew Connelly's Developer Page
-
-## Moving servers, be back shortly...
