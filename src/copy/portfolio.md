@@ -1,12 +1,8 @@
----
-title: Portfolio
-description: A list of recent work and technologies used.
----
-
 ## Portfolio
 
 ### Charlie Article "TL;DR"
 <a href="http://helloitscharlie.com/tldr" target="_blank">http://helloitscharlie.com/tldr</a>
+
 - **ScrollMagic**
 	- Used for capturing scroll and firing scroll events.
 - **GreenSock**
@@ -22,6 +18,7 @@ description: A list of recent work and technologies used.
 
 ### Casa Apicii (Lead Developer)
 <a href="http://casaapicii.com" target="_blank">http://casaapicii.com</a>
+
 - **Craft CMS**
 	- Used for highly-customizable client-facing content-management
 - **Slick**
@@ -34,6 +31,7 @@ description: A list of recent work and technologies used.
 
 ### Margaux NY
 <a href="https://margauxny.com/" target="_blank">https://margauxny.com/</a>
+
 - **Liquid Templating Language**
 	- Used as Shopify's primary templating language
 - **Jade**
@@ -47,6 +45,7 @@ description: A list of recent work and technologies used.
 
 ### Follow the money
 <a href="http://partners.wsj.com/netflix/follow-the-money/" target="_blank">http://partners.wsj.com/netflix/follow-the-money/</a>
+
 - **Post-CSS**
 	- Used for writing custom CSS selectors and rules
 - **Jade**
@@ -58,6 +57,7 @@ description: A list of recent work and technologies used.
 
 ### Defy Hunger Together
 <a href="http://partners.wsj.com/mini/defy-hunger-together/" target="_blank">http://partners.wsj.com/mini/defy-hunger-together/</a>
+
 - **Jade**
 - **JQuery**
 - **SASS**

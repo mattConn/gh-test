@@ -1,0 +1,3 @@
+#include header.txt
+#include copy/$1
+#include footer.txt

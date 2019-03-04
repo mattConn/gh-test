@@ -1,0 +1,7 @@
+#include head.txt , Portfolio - Recent Work
+
+#include header.txt
+
+#include copy/portfolio.md
+
+#include footer.txt

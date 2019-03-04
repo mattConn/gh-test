@@ -1,0 +1,7 @@
+#include head.txt , Matthew's Developer Page - Home
+
+#include header.txt
+
+#include copy/home.md
+
+#include footer.txt
