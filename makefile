@@ -7,7 +7,11 @@ index: src/index.txt
 portfolio: src/portfolio.txt
 	$(PP) $(FLAGS) $^ > dist/$@.html
 
-all: index portfolio
+move:
+	cp -r storage dist/
+	
+
+all: index portfolio move
 
 clean: 
-	rm dist/*.html
+	rm dist/*.html; rm -r dist/*
