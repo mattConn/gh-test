@@ -1,4 +1,4 @@
-I’m a software developer with a BS in Communications from The College of Staten Island, currently pursuing a BS in Computer Science at the same college with an anticipated graduation in Fall 2020. Previously, I worked as a web developer for The Charles NYC.
+I'm a software developer with a BS in Communications from The College of Staten Island, currently pursuing a BS in Computer Science at the same college with an anticipated graduation in Fall 2020. Previously, I worked as a web developer for The Charles NYC.
 
 I'm currently looking for a software developer internship, so please contact me at the email below if you're interested in working with me.
 
