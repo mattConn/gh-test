@@ -1,14 +1,14 @@
-PP = cssg
+PP = ./cssg
 FLAGS = -m pandoc
 
 index: src/index.txt
-	$(PP) $(FLAGS) $^ > dist/$@.html
+	$(PP) $(FLAGS) $^ -o dist/$@.html
 
 portfolio: src/portfolio.txt
-	$(PP) $(FLAGS) $^ > dist/$@.html
+	$(PP) $(FLAGS) $^ -o dist/$@.html
 
 move:
-	cp -r storage dist/
+	cp -r src/storage dist/; cp -r src/style dist/
 	
 
 all: index portfolio move

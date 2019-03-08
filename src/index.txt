@@ -1,7 +1,11 @@
 #include head.txt , Matthew's Developer Page - Home
 
+<div id="wrapper">
 #include header.txt
 
 #include copy/home.md
 
 #include footer.txt
+
+</div>
+# end wrapper
