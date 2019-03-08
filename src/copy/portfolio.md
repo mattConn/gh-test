@@ -1,5 +1,7 @@
 ## Portfolio
 
+<hr>
+
 ### Charlie Article "TL;DR"
 <a href="http://helloitscharlie.com/tldr" target="_blank">http://helloitscharlie.com/tldr</a>
 

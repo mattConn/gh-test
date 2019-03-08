@@ -1,4 +1,4 @@
 <a name="top">
 <h1>Matthew Connelly's Developer Page</h1>
-#include nav.md
+#include nav.txt
 <hr>
