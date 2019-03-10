@@ -1,6 +1,6 @@
 <nav>
 <a href="index.html">Home</a> |
-Resume: <a href="storage/resume-2019.pdf">PDF</a> / <a href="storage/resume-2019.html">HTML</a> |
+<a href="storage/resume-2019.pdf">Resume</a> |
 <a href="portfolio.html">Portfolio</a> |
 <a href="https://github.com/mattConn/">GitHub</a> |
 <a href="https://www.linkedin.com/in/matconn/">LinkedIn</a> |

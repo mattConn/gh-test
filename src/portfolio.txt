@@ -1,4 +1,4 @@
-#include head.txt , Portfolio - Recent Work
+#include head.txt Portfolio - Recent Work
 
 <div id="wrapper">
 #include header.txt

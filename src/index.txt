@@ -1,4 +1,4 @@
-#include head.txt , Matthew's Developer Page - Home
+#include head.txt Matthew's Developer Page - Home
 
 <div id="wrapper">
 #include header.txt
