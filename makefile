@@ -1,4 +1,4 @@
-PP = ./cssg
+PP = cssg
 FLAGS = -m pandoc
 
 index: src/index.txt
