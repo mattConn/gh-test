@@ -1,11 +1,19 @@
+/* mobile rules for wrapper */
 #wrapper {   
+	width: 100%;
 	margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    border: solid 1px #d6d6d6;
     padding: 20px;
 }
 
 a:hover {
 	text-decoration: none;
+}
+
+/* desktop rules for wrapper */
+@media only screen and (min-width: 600px) {
+  #wrapper {
+    width: 80%;
+    max-width: 600px;
+    border: solid 1px #d6d6d6;
+  }
 }
