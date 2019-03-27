@@ -1,6 +1,6 @@
 ## Hello
 
-I'm a software developer with a BS in Communications pursuing a BS in Computer Science.
+I'm a web developer with a BS in Communications pursuing a BS in Computer Science.
 
 Previously, I worked as a web developer for The Charles NYC.
 
