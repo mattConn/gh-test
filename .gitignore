@@ -1,6 +1,8 @@
 *.swp
 .DS_Store
 mattconn.dev
+node_modules
+dist
 
 # LaTex ignore
 *.aux

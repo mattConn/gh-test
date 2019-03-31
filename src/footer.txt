@@ -1,2 +1,0 @@
-<hr>
-<a href="#top">Top</a>

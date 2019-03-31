@@ -1,0 +1,33 @@
+// breakpoints
+$desktop: 880px;
+
+// mixins
+@mixin breakpoint($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+.mobile-only{
+    @include breakpoint($desktop)
+    {
+        display: none;
+    }
+}
+.desktop-only{
+    display: none;
+    @include breakpoint($desktop)
+    {
+        display: initial;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+li {
+    list-style: none;
+}
