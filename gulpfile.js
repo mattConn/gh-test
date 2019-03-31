@@ -14,24 +14,31 @@ const data = {
         ]
 };
 
-const dist = "dist"; // distributable
-const src = "src"; // source
-
 const del = require("del");
 const gulp = require("gulp");
 const nunjucks = require("gulp-nunjucks");
+const sass = require("gulp-sass");
 
-// generate html from pug
-function html() {
-    return gulp.src(["src/*.html","!src/_*.html"])
+// generate css with sass
+function styles() {
+    return gulp.src(["src/styles/*.scss", "!src/styles/_*.scss"])
+        .pipe(sass())
+        .pipe(gulp.dest("dist/styles"));
+}
+
+// generate html with nunjucks 
+function templates() {
+    return gulp.src(["src/templates/*.html","!src/templates/_*.html"])
     .pipe(nunjucks.compile(data))
-    .pipe(gulp.dest(`${dist}/`));
+    .pipe(gulp.dest("dist/"));
 }
 
 function clean() {
-    return del(dist);
+    return del("dist");
 }
 
-exports.html = html;
+// tasks
+exports.templates = templates;
+exports.styles = styles;
 exports.clean = clean;
-exports.default = gulp.series(html);
+exports.default = gulp.series(templates, styles);

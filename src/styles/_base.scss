@@ -1,0 +1,15 @@
+// breakpoints
+$desktop: 600px;
+
+// mixins
+@mixin breakpoint($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}

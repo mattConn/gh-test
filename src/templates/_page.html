@@ -9,13 +9,15 @@
         {# twitter bootstrap #}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         {# global style #}
-        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <div id="wrapper">
-            {% include "_header.html" %}
-            {% block content %}{% endblock %}
-            {% include "_footer.html" %}
+        <div id="wrapper-outer">
+            <div id="wrapper-inner">
+                {% include "_header.html" %}
+                {% block content %}{% endblock %}
+                {% include "_footer.html" %}
+            </div> <!-- end wrapper -->
         </div> <!-- end wrapper -->
     </body>
 </html>

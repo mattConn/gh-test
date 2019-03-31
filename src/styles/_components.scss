@@ -1,0 +1,19 @@
+@import 'base';
+
+#wrapper {
+    &-outer {
+        display: block;
+        width: 100%;
+    }
+
+    &-inner {
+        margin: 20px auto;
+        padding: 20px;
+
+        @include breakpoint($desktop) {
+            width: 80%;
+            max-width: 600px;
+            border: solid 1px #d6d6d6;
+        }
+    }
+}
