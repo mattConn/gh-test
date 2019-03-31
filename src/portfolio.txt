@@ -1,9 +1,0 @@
-#include head.txt Portfolio - Recent Work
-
-<div id="wrapper">
-#include header.txt
-
-#include copy/portfolio.md
-
-#include footer.txt
-</div>

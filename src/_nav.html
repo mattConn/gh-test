@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+    {% for link in navlinks %}
+        <li>
+        <a href="{{ link.url }}">{{ link.text }}</a>
+        {% if not loop.last %}
+        |
+        {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>
