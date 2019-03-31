@@ -19,6 +19,12 @@ const gulp = require("gulp");
 const nunjucks = require("gulp-nunjucks");
 const sass = require("gulp-sass");
 
+// move stored files
+function move() {
+    return gulp.src("src/storage/*")
+        .pipe(gulp.dest("dist/storage"));
+}
+
 // generate css with sass
 function styles() {
     return gulp.src(["src/styles/*.scss", "!src/styles/_*.scss"])
@@ -37,8 +43,18 @@ function clean() {
     return del("dist");
 }
 
+
+// watch files for changes
+function watch() {
+    gulp.watch("src/templates/*.html", templates);
+    gulp.watch("src/styles/*.scss", styles);
+    gulp.watch("src/storage/*", move)
+
+}
 // tasks
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
-exports.default = gulp.series(templates, styles);
+exports.move = move;
+exports.watch = watch;
+exports.default = gulp.series(templates, styles, move);
