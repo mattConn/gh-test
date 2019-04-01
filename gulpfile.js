@@ -46,7 +46,7 @@ function clean() {
 
 // watch files for changes
 function watch() {
-    gulp.watch("src/templates/*.html", templates);
+    gulp.watch(["src/templates/*.html"], templates);
     gulp.watch("src/styles/*.scss", styles);
     gulp.watch("src/storage/*", move)
 

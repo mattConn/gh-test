@@ -2,12 +2,15 @@
     &-outer {
         display: block;
         width: 100%;
+        background-color: $white;
     }
 
     &-inner {
         margin: 0 auto;
         padding: 40px;
-        font-size: 1.6em;
+        font-size: 1.6rem;
+        color: $black;
+        background-color: $white;
 
         @include breakpoint($desktop) {
             width: 80%;
@@ -20,6 +23,10 @@ header {
     &#global {
         h1 {
             font-size: 2em;
+            @include breakpoint($desktop)
+            {
+                font-size: 1.78em;
+            }
         }
 
         nav {
@@ -27,6 +34,8 @@ header {
         }
 
         ul {
+            font-size: 1.4rem;
+            text-align: center;
             padding: 0;
             li {
                 display: inline-block;
