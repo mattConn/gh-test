@@ -49,9 +49,11 @@
                 text-align: center;
                 font-size: 1.4rem;
                 padding: 0;
-                @include breakpoint($desktop)
-                {
-                    li {
+                li {
+                    margin-bottom: .5em;
+                    @include breakpoint($desktop)
+                    {
+                        margin-bottom: initial;
                         display: inline-block;
                     }
                 }
@@ -71,7 +73,8 @@
     &-hamburger {
         &__ctn {
             position: absolute;
-            right: 0;
+            right: -20px;
+            top: -20px;
             @include breakpoint($desktop){ display: none; }
             display: inline-block;
         }
