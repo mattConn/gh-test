@@ -1,8 +1,13 @@
-<header id="global">
-    <a name="top">
+<header class="header-global">
+    <a name="top"></a> {# for page jump link in footer #}
+
+    {% include "components/_hamburger-btn.html" %}
+    {% include "_nav.html" %}
+    {# header with breakpoint-specific line breaks and copy #}
+    <div class="header-global__inner"> 
         <h1>Matthew Connelly's <br class="mobile-only">
         <span class="desktop-only">Developer</span>
         <span class="mobile-only">Dev</span> Page</h1>
-    {% include "_nav.html" %}
+    </div>
 </header>
 <hr>

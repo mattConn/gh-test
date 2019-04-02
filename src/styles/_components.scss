@@ -19,26 +19,76 @@
     }
 }
 
-header {
-    &#global {
-        h1 {
-            font-size: 2em;
-            @include breakpoint($desktop)
-            {
-                font-size: 1.78em;
+// global site header: title, navigation
+.header {
+    &-global
+    {
+        position: relative;
+        &__inner {
+            h1 {
+                font-size: 2em;
+                display: inline-block;
+                @include breakpoint($desktop)
+                {
+                    font-size: 1.78em;
+                }
             }
+
+            button {
+                display: inline-block;
+                @include breakpoint($desktop)
+                {
+                    display: none;
+                }
+            } 
         }
 
         nav {
-            margin: 40px 0 20px 0;
+            // display: none;
+            ul {
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 0;
+                @include breakpoint($desktop)
+                {
+                    li {
+                        display: inline-block;
+                    }
+                }
+            }
+            @include breakpoint($desktop)
+            {
+                display: initial;
+                margin: 40px 0 20px 0;
+            }
         }
 
-        ul {
-            font-size: 1.4rem;
-            text-align: center;
-            padding: 0;
-            li {
-                display: inline-block;
+    }
+}
+
+// buttons
+.btn {
+    &-hamburger {
+        &__ctn {
+            position: absolute;
+            right: 0;
+            @include breakpoint($desktop){ display: none; }
+            display: inline-block;
+        }
+
+        &__inner {
+            cursor: pointer;
+            padding: 20px;
+            border-style: none;
+        }
+
+        &__bars {
+            // horizontal bars
+            div { 
+                width: 28px;
+                height: 3px;
+                background-color: $black;
+                margin-bottom: 5px;
             }
         }
     }
