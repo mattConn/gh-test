@@ -39,6 +39,11 @@ function templates() {
     .pipe(gulp.dest("dist/"));
 }
 
+function javascript() {
+    return gulp.src("src/javascript/*.js")
+    .pipe(gulp.dest("dist"));
+}
+
 function clean() {
     return del("dist");
 }
@@ -48,6 +53,7 @@ function clean() {
 function watch() {
     gulp.watch(["src/templates/**/*.html"], templates);
     gulp.watch("src/styles/*.scss", styles);
+    gulp.watch("src/javascript/*.js", javascript);
     gulp.watch("src/storage/*", move)
 
 }
@@ -55,6 +61,7 @@ function watch() {
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
+exports.javascript = javascript;
 exports.move = move;
 exports.watch = watch;
-exports.default = gulp.series(templates, styles, move);
+exports.default = gulp.series(templates, styles, javascript, move);

@@ -43,8 +43,11 @@
             } 
         }
 
-        nav {
-            // display: none;
+        .navigation {
+            display: none;
+
+            &--visible { display: initial; }
+
             ul {
                 text-align: center;
                 font-size: 1.4rem;
