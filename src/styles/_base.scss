@@ -12,21 +12,8 @@ $white: #fff;
     }
 }
 
-// add "-plus-" to class
-@mixin plus-class {
-    @for $i from 1 to 5
-    {
-        @for $j from 0 through 10 
-        {
-            $inc: $i*100 + $j*10;
-            &-plus-#{$inc} {
-                @include breakpoint($desktop + $inc)
-                {
-                    @content;
-                }
-            }
-        }
-    }
+.hidden {
+    display: none;
 }
 
 // breakpoint-specific styles

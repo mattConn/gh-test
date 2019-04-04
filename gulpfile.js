@@ -11,7 +11,14 @@ const data = {
             {url: "https://www.linkedin.com/in/mattconndev/", text: "LinkedIn"},
             {url: "https://twitter.com/mattconndev", text: "Twitter"},
             {url: "https://dev.to/mattconn", text: "Blog"}
-        ]
+        ],
+    portfolio: [
+        {text: "Charlie Article \"TL;DR\"", url: "http://helloitscharlie.com/tldr"},
+        {text: "Casa Apicii", url: "http://casaapicii.com"},
+        {text: "Margaux NY", url: "https://margauxny.com/"},
+        {text: "Follow The Money", url: "http://partners.wsj.com/netflix/follow-the-money/"},
+        {text: "Defy Hunger Together", url: "http://partners.wsj.com/mini/defy-hunger-together/"}
+    ]
 };
 
 const del = require("del");

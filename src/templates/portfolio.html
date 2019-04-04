@@ -3,145 +3,15 @@
 
 {% block content%}
     <h2 id="portfolio">Portfolio</h2>
-    <p>A list of some projects I've worked on professionally <br class="desktop-only"> and what I used.</p>
+    <p>A list of some projects I've worked on professionally.</p>
     <hr>
-    <h3 id="charlie-article-tldr">Charlie Article &quot;TL;DR&quot;</h3>
-    <p>
-        <a href="http://helloitscharlie.com/tldr" target="_blank">http://helloitscharlie.com/tldr</a>
-    </p>
-    <ul>
-        <li>
-            <strong>ScrollMagic</strong>
-            <ul>
-                <li>Used for capturing and firing scroll events.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>GreenSock</strong>
-            <ul>
-                <li>Used for detailed animations.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>JQuery</strong>
-            <ul>
-                <li>Used for interaction scripting with cross-browser support</li>
-            </ul>
-        </li>
-        <li>
-            <strong>SASS</strong>
-            <ul>
-                <li>Used for rendering reusable styles via mixins, partials and variables</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Gulp</strong>
-            <ul>
-                <li>Used for task automation and project architecture</li>
-            </ul>
-        </li>
-    </ul>
-    <hr/>
-    <h3 id="casa-apicii-lead-developer">Casa Apicii (Lead Developer)</h3>
-    <p>
-        <a href="http://casaapicii.com" target="_blank">http://casaapicii.com</a>
-    </p>
-    <ul>
-        <li>
-            <strong>Craft CMS</strong>
-            <ul>
-                <li>Used for customizable client-facing content management</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Slick</strong>
-            <ul>
-                <li>Used for interactive slideshows with multiple device support</li>
-            </ul>
-        </li>
-        <li>
-            <strong>JQuery</strong>
-        </li>
-        <li>
-            <strong>SASS</strong>
-        </li>
-        <li>
-            <strong>Gulp</strong>
-        </li>
-    </ul>
-    <hr/>
-    <h3 id="margaux-ny">Margaux NY</h3>
-    <p>
-        <a href="https://margauxny.com/" target="_blank">https://margauxny.com/</a>
-    </p>
-    <ul>
-        <li>
-            <strong>Liquid Templating Language</strong>
-            <ul>
-                <li>Used as Shopify's primary templating language</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Jade</strong>
-            <ul>
-                <li>Used to programmatically render HTML with mixins, partials and loops</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Craft CMS</strong>
-        </li>
-        <li>
-            <strong>JQuery</strong>
-        </li>
-        <li>
-            <strong>SASS</strong>
-        </li>
-        <li>
-            <strong>Gulp</strong>
-        </li>
-    </ul>
-    <hr/>
-    <h3 id="follow-the-money">Follow the money</h3>
-    <p>
-        <a href="http://partners.wsj.com/netflix/follow-the-money/" target="_blank">http://partners.wsj.com/netflix/follow-the-money/</a>
-    </p>
-    <ul>
-        <li>
-            <strong>Post-CSS</strong>
-            <ul>
-                <li>Used for writing custom CSS selectors and rules</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Jade</strong>
-        </li>
-        <li>
-            <strong>JQuery</strong>
-        </li>
-        <li>
-            <strong>SASS</strong>
-        </li>
-        <li>
-            <strong>Gulp</strong>
-        </li>
-    </ul>
-    <hr/>
-    <h3 id="defy-hunger-together">Defy Hunger Together</h3>
-    <p>
-        <a href="http://partners.wsj.com/mini/defy-hunger-together/" target="_blank">http://partners.wsj.com/mini/defy-hunger-together/</a>
-    </p>
-    <ul>
-        <li>
-            <strong>Jade</strong>
-        </li>
-        <li>
-            <strong>JQuery</strong>
-        </li>
-        <li>
-            <strong>SASS</strong>
-        </li>
-        <li>
-            <strong>Gulp</strong>
-        </li>
-    </ul>
+    {% for item in portfolio %}
+    <div>
+        <h3>{{item.text}}</h3>
+        <a href="{{item.url}}" target="_blank">Link</a>
+        <div class="octicon-link-external
+"></div>
+    </div>
+    {% if not loop.last%} <hr> {% endif %}
+    {% endfor%}
 {% endblock %}
