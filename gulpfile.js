@@ -22,7 +22,9 @@ const sass = require("gulp-sass");
 // move stored files
 function move() {
     return gulp.src("src/storage/*")
-        .pipe(gulp.dest("dist/storage"));
+        .pipe(gulp.dest("dist/storage"))
+        .pipe(gulp.src("src/phaser-js-game/*"))
+        .pipe(gulp.dest("dist/phaser-js-game"));
 }
 
 // generate css with sass
