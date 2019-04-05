@@ -1,13 +1,16 @@
 // breakpoints
-$desktop: 880;
+$tablet: 880px;
+$desktop: 1000px;
 
 // colors
 $black: #000000b8;
+$dark-black:#000000c4;
 $white: #fff;
+$grey: #7f7d7d;
 
 // mixins
 @mixin breakpoint($size) {
-    @media screen and (min-width: $size+px) {
+    @media screen and (min-width: $size) {
         @content;
     }
 }
@@ -16,7 +19,6 @@ $white: #fff;
     display: none;
 }
 
-// breakpoint-specific styles
 .mobile {
     &-only {
         @include breakpoint($desktop)
@@ -37,9 +39,16 @@ $white: #fff;
 
 // elements
 a {
+    &.jump-anchor { //page jump anchor
+        display: none;
+    }
+
     &:hover {
         text-decoration: none;
+        color: $black;
+        border-bottom: solid 1px $black;
     }
+    color: $grey;
 }
 
 li {

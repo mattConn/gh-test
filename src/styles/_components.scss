@@ -46,7 +46,13 @@
         .navigation {
             display: none;
 
-            &--visible { display: initial; }
+            &--visible {
+                display: block;
+                width: 100%;
+                display: block;
+                background-color: $white;
+                height: 100vh;
+            }
 
             ul {
                 text-align: center;
@@ -58,6 +64,9 @@
                     {
                         margin-bottom: initial;
                         display: inline-block;
+                        a {
+                            margin-right: .5em; 
+                        }
                     }
                 }
             }
