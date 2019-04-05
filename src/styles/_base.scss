@@ -40,7 +40,7 @@ $grey: #7f7d7d;
 // elements
 a {
     &.jump-anchor { //page jump anchor
-        display: none;
+        visibility: hidden;
     }
 
     &:hover {
