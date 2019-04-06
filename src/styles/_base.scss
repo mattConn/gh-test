@@ -7,6 +7,7 @@ $black: #000000b8;
 $dark-black:#000000c4;
 $white: #fff;
 $grey: #7f7d7d;
+$light-grey:#c7c7c7;
 
 // mixins
 @mixin breakpoint($size) {
@@ -14,6 +15,8 @@ $grey: #7f7d7d;
         @content;
     }
 }
+
+
 
 .hidden {
     display: none;
@@ -38,14 +41,25 @@ $grey: #7f7d7d;
 }
 
 // elements
+a, p, h1, h2, h3, span, li, br {
+    &::selection{
+        background-color: $light-grey;
+    }
+}
 a {
+
+    &:focus { outline: none; }
+
+    border-bottom: none;
+    transition: .09s color, .09s border-bottom;
+
     &.jump-anchor { //page jump anchor
         visibility: hidden;
     }
 
     &:hover {
         text-decoration: none;
-        color: $black;
+        color: $dark-black;
         border-bottom: solid 1px $black;
     }
     color: $grey;
