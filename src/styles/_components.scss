@@ -3,6 +3,7 @@
         display: block;
         width: 100%;
         background-color: $white;
+        -webkit-font-smoothing: antialiased;
     }
 
     &-inner {
