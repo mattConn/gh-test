@@ -16,7 +16,21 @@ $light-grey:#c7c7c7;
     }
 }
 
+// animations
+@keyframes fade-in {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
 
+@keyframes fade-out {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
+
+.fade {
+    &-in { animation: fade-in .1s; }
+    &-out { animation: fade-out .1s; }
+}
 
 .hidden {
     display: none;
@@ -50,7 +64,7 @@ a {
 
     &:focus { outline: none; }
 
-    border-bottom: none;
+    border-bottom: solid 1px $white;
     transition: .09s color, .09s border-bottom;
 
     &.jump-anchor { //page jump anchor
