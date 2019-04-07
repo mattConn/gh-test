@@ -6,6 +6,7 @@ $desktop: 1000px;
 $black: #000000b8;
 $dark-black:#000000c4;
 $white: #fff;
+$blue: #00aee5;
 $grey: #7f7d7d;
 $light-grey:#c7c7c7;
 
@@ -61,22 +62,20 @@ a, p, h1, h2, h3, span, li, br {
     }
 }
 a {
-
+    color: $blue;
     &:focus { outline: none; }
-
-    border-bottom: solid 1px $white;
+    border-bottom: solid 1px transparent;
     transition: .09s color, .09s border-bottom;
-
-    &.jump-anchor { //page jump anchor
-        visibility: hidden;
-    }
 
     &:hover {
         text-decoration: none;
         color: $dark-black;
         border-bottom: solid 1px $black;
     }
-    color: $grey;
+
+    &.jump-anchor { //page jump anchor
+        visibility: hidden;
+    }
 }
 
 li {

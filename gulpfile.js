@@ -13,7 +13,7 @@ const data = {
             {url: "https://dev.to/mattconn", text: "Blog"}
         ],
     portfolio: [
-        {text: "Charlie Article \"TL;DR\"", url: "http://helloitscharlie.com/tldr"},
+        {text: "Charlie Webpage \"TL;DR\"", url: "http://helloitscharlie.com/tldr"},
         {text: "Casa Apicii", url: "http://casaapicii.com"},
         {text: "Margaux NY", url: "https://margauxny.com/"},
         {text: "Follow The Money", url: "http://partners.wsj.com/netflix/follow-the-money/"},

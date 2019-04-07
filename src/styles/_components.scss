@@ -4,6 +4,7 @@
     font-size: 1.5em;
     color: $dark-black;
     background-color: $white;
+    font-family: sans-serif;
 }
 // screen widths
 .screen {
@@ -32,12 +33,8 @@
     {
         position: relative;
         h1 {
-            font-size: 2em;
+            font-size: 3em;
             display: inline-block;
-            @include breakpoint($desktop)
-            {
-                font-size: 1.78em;
-            }
         }
 
         .btn-hamburger {
@@ -61,11 +58,13 @@
 
             ul {
                 text-align: center;
-                font-size: 1.4rem;
+                font-size: .7em;
                 padding: 0;
+                text-transform: uppercase;
                 @include breakpoint($desktop)
                 {
                     text-align: left;
+                    font-size: .6em;
                 }
                 li {
                     margin-bottom: .5em;
