@@ -4,7 +4,6 @@
 const hamburgerBtn = document.querySelector(".btn-hamburger__ctn");
 const nav = document.querySelector(".navigation");
 const navlinks = document.querySelectorAll(".navigation a");
-const wrapper_inner = document.querySelector("#wrapper-inner");
 const main = document.querySelector("main");
 
 // toggle element class in classlist 

@@ -13,12 +13,10 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <div id="wrapper-outer">
-            <div id="wrapper-inner">
-                {% include "_header.html" %}
-                {% block content %}{% endblock %}
-            </div> <!-- end wrapper -->
-        </div> <!-- end wrapper -->
+    <div id="wrapper" class="screen-full">
+            {% include "_header.html" %}
+            {% block content %}{% endblock %}
+    </div> <!-- end wrapper -->
 
     <script src="main.js"></script>
     </body>
