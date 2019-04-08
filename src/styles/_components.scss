@@ -33,8 +33,12 @@
     {
         position: relative;
         h1 {
-            font-size: 3em;
+            font-size: 2.6em;
             display: inline-block;
+            @include breakpoint($desktop)
+            {
+                font-size: 3em;
+            }
         }
 
         .btn-hamburger {
@@ -58,7 +62,7 @@
 
             ul {
                 text-align: center;
-                font-size: .7em;
+                font-size: .9em;
                 padding: 0;
                 text-transform: uppercase;
                 @include breakpoint($desktop)
@@ -67,7 +71,7 @@
                     font-size: .6em;
                 }
                 li {
-                    margin-bottom: .5em;
+                    margin-bottom: .8em;
                     @include breakpoint($desktop)
                     {
                         margin-bottom: initial;
