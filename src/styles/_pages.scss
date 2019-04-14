@@ -2,6 +2,15 @@
 {
     &-work
     {
-        height: 100px;
+        &-row
+        {
+            width: 100%;
+            display: inline-block;
+
+            @include breakpoint($desktop)
+            {
+                width: 30%;
+            }
+        }
     }
 }

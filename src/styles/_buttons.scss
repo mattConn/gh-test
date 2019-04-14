@@ -1,0 +1,74 @@
+// buttons
+.btn {
+    &-reveal-content // reveal inner div on hover
+    {
+        width: 100%;
+        cursor: pointer;
+        display: inline-block;
+        border-bottom: none;
+
+        &:hover{
+            border-bottom: none;
+            .btn-reveal-content-inner__fg
+            {
+                opacity: 1; 
+            }
+        }
+
+        &-inner
+        {
+            &__ctn // contains fg, bg
+            {
+                height: 40vw;
+                width: 100%;
+                position: relative;
+            }
+
+            &__fg // foreground
+            {
+                position: absolute;
+                background-size: cover;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                transition: .1s opacity;
+            }
+
+            &__bg // background
+            {
+                position: absolute;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &-hamburger { // navigation hamburger btn
+        background-color: transparent;
+        &:focus { outline: none; }
+        &__ctn {
+            position: absolute;
+            right: -20px;
+            top: -20px;
+            @include breakpoint($desktop){ display: none; }
+            display: inline-block;
+        }
+
+        &__inner {
+            cursor: pointer;
+            padding: 20px;
+            border-style: none;
+        }
+
+        &__bars {
+            // horizontal bars
+            div { 
+                width: 28px;
+                height: 3px;
+                background-color: $black;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

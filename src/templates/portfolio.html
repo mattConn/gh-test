@@ -8,16 +8,21 @@
     <hr>
 
     {% for item in portfolio %}
-        <div>
-            <a class="btn-reveal-content">
-                <h3>{{item.text}}</h3>
-                <div class="portfolio-work btn-reveal-content-inner__ctn">
-                    <div class="btn-reveal-content-inner__fg" style="background-image: url({{item.img_fg}})" ></div>
-                    <div class="btn-reveal-content-inner__bg" ></div>
-                </div>
-            </a>
-        </div>
-    {% if not loop.last%} <hr> {% endif %}
+        {% if loop.index % 2 != 0 %} <div class= "portfolio-work-row"> {% endif %}
+            <div class="portfolio-work">
+                <a class="btn-reveal-content" href="{{item.url}}">
+                    <h3>{{item.text}}</h3>
+                    <div class="btn-reveal-content-inner__ctn">
+                        <div class="btn-reveal-content-inner__fg" style="background-image: url({{item.img_fg}})" ></div>
+                        <div class="btn-reveal-content-inner__bg" style="background-image: url({{item.img_bg}})"></div>
+                    </div>
+                </a> {# end reveal content #}
+            </div> {# end portfolio-work #}
+        {% if not loop.last%} <hr class="mobile-only"> {% endif %}
+        {% if loop.index % 2 == 0 %}
+            <hr class="desktop-only">
+            </div> {# end portfolio-work-row #}
+        {% endif %}
     {% endfor%}
 
 
