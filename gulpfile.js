@@ -14,11 +14,11 @@ const data = {
             {url: "https://dev.to/mattconn", text: "Blog"}
         ],
     portfolio: [
-        {text: "Charlie Webpage \"TL;DR\"", url: "http://helloitscharlie.com/tldr", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/charlie-webpage-tldr.png`,},
-        {text: "Casa Apicii", url: "http://casaapicii.com", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/casa-apicii.png`},
+        {text: "Charlie Webpage \"TL;DR\"", url: "http://helloitscharlie.com/tldr", img_fg: `${portfolio_img}/charlie-webpage-tldr-2.png`, img_bg: `${portfolio_img}/charlie-webpage-tldr.png`,},
+        {text: "Casa Apicii", url: "http://casaapicii.com", img_fg: `${portfolio_img}/casa-apicii-2.png`, img_bg: `${portfolio_img}/casa-apicii.png`},
         {text: "Margaux NY", url: "https://margauxny.com/", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/margaux.png`},
-        {text: "Follow The Money", url: "http://partners.wsj.com/netflix/follow-the-money/", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/follow-the-money.png`,},
-        {text: "Defy Hunger Together", url: "http://partners.wsj.com/mini/defy-hunger-together/", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/defy-hunger.png`}
+        {text: "Follow The Money", url: "http://partners.wsj.com/netflix/follow-the-money/", img_fg: `${portfolio_img}/follow-the-money-2.png`, img_bg: `${portfolio_img}/follow-the-money.png`,},
+        {text: "Defy Hunger Together", url: "http://partners.wsj.com/mini/defy-hunger-together/", img_fg: `${portfolio_img}/defy-hunger-2.png`, img_bg: `${portfolio_img}/defy-hunger.png`}
     ]
 };
 
