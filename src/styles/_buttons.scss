@@ -22,6 +22,11 @@
                 height: 40vw;
                 width: 100%;
                 position: relative;
+
+                @include breakpoint($desktop)
+                {
+                    height: 20vw;
+                }
             }
 
             &__fg // foreground
