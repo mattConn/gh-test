@@ -2,17 +2,21 @@
 {% block title %}Portfolio{% endblock %}
 
 {% block content%}
-<main class="fade-in screen-max">
+<main class="fade-in screen-max portfolio">
     <h2 id="portfolio">Portfolio</h2>
     <p>A list of some projects I've worked on professionally.</p>
     <hr>
+
     {% for item in portfolio %}
-    <div>
-        <h3>{{item.text}}</h3>
-        <a href="{{item.url}}" target="_blank">Link</a>
-        <div class="octicon-link-external
-"></div>
-    </div>
+        <div>
+            <a class="btn-reveal-content">
+                <h3>{{item.text}}</h3>
+                <div class="portfolio-work btn-reveal-content-inner__ctn">
+                    <div class="btn-reveal-content-inner__fg" style="background-image: url({{item.img_fg}})" ></div>
+                    <div class="btn-reveal-content-inner__bg" ></div>
+                </div>
+            </a>
+        </div>
     {% if not loop.last%} <hr> {% endif %}
     {% endfor%}
 

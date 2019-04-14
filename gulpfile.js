@@ -1,6 +1,7 @@
 "use strict";
 
 // website data
+const portfolio_img = "images/portfolio";
 const data = {
     navlinks: [
             {url: "index.html", text: "Home"},
@@ -13,11 +14,11 @@ const data = {
             {url: "https://dev.to/mattconn", text: "Blog"}
         ],
     portfolio: [
-        {text: "Charlie Webpage \"TL;DR\"", url: "http://helloitscharlie.com/tldr"},
-        {text: "Casa Apicii", url: "http://casaapicii.com"},
-        {text: "Margaux NY", url: "https://margauxny.com/"},
-        {text: "Follow The Money", url: "http://partners.wsj.com/netflix/follow-the-money/"},
-        {text: "Defy Hunger Together", url: "http://partners.wsj.com/mini/defy-hunger-together/"}
+        {text: "Charlie Webpage \"TL;DR\"", url: "http://helloitscharlie.com/tldr", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/`,},
+        {text: "Casa Apicii", url: "http://casaapicii.com", img_fg: `${portfolio_img}/casa-apicii.png`, img_bg: `${portfolio_img}/`,},
+        {text: "Margaux NY", url: "https://margauxny.com/", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/`,},
+        {text: "Follow The Money", url: "http://partners.wsj.com/netflix/follow-the-money/", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/`,},
+        {text: "Defy Hunger Together", url: "http://partners.wsj.com/mini/defy-hunger-together/", img_fg: `${portfolio_img}/`, img_bg: `${portfolio_img}/`,}
     ]
 };
 
@@ -30,6 +31,8 @@ const sass = require("gulp-sass");
 function move() {
     return gulp.src("src/storage/*")
         .pipe(gulp.dest("dist/storage"))
+        .pipe(gulp.src("src/images/**/*"))
+        .pipe(gulp.dest("dist/images"))
         .pipe(gulp.src("src/phaser-js-game/**/*"))
         .pipe(gulp.dest("dist/phaser-js-game"));
 }
