@@ -2,6 +2,9 @@
 {
     &-work
     {
+        display: inline-block;
+        width: 100%;
+
         &-row
         {
             width: 100%;
@@ -9,8 +12,12 @@
 
             @include breakpoint($desktop)
             {
-                width: 30%;
+                display: flex;
+                flex-direction: row;
             }
+
+            margin-bottom: 1em;
+
         }
     }
 }
