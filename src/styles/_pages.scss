@@ -1,0 +1,23 @@
+.portfolio
+{
+    &-work
+    {
+        display: inline-block;
+        width: 100%;
+
+        &-row
+        {
+            width: 100%;
+            display: inline-block;
+
+            @include breakpoint($desktop)
+            {
+                display: flex;
+                flex-direction: row;
+            }
+
+            margin-bottom: 1em;
+
+        }
+    }
+}

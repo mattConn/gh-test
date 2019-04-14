@@ -92,33 +92,3 @@
     }
 }
 
-// buttons
-.btn {
-    &-hamburger { // navigation hamburger btn
-        background-color: transparent;
-        &:focus { outline: none; }
-        &__ctn {
-            position: absolute;
-            right: -20px;
-            top: -20px;
-            @include breakpoint($desktop){ display: none; }
-            display: inline-block;
-        }
-
-        &__inner {
-            cursor: pointer;
-            padding: 20px;
-            border-style: none;
-        }
-
-        &__bars {
-            // horizontal bars
-            div { 
-                width: 28px;
-                height: 3px;
-                background-color: $black;
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
