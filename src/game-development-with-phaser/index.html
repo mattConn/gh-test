@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Game Development with Phaser</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/vs.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+			<section data-markdown>
+				<textarea data-template>
+					## Game Development with Phaser
+					Matthew Connelly
+
+					<small>Twitter: @mattconndev</small>
+				</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					### A Framework for 2D Games
+					- Uses Pixi JS, a canvas frameork
+					- Handles physics
+						- Gravity
+						- Collision
+						- Position
+						- Velocity/speed
+					- A LOT More (sound)
+				</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					### Where to Start?
+					What game would I play? 
+
+					<div class = "img-ctn">
+						<img style="width: 43%; display: inline-block;" src="images/SMA-cover.jpg">
+						<img style="width: 43%; display: inline-block;" src="images/spelunky-cover.jpg">
+					</div>
+				</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					### What features do I want? 
+
+					Using qualitative language:
+
+					- Jumping
+						- Not so much, not double jumping
+					- Bouncing
+					- Fast and Loose
+						- But not too much
+
+				</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					### 3 Functions To Rule Them All
+					<small>API Specifics</small>
+					```
+					function Preload() {
+						// Load assets
+					}
+
+					function Create() {
+						// Configure game objects
+					}
+
+					function Update() {
+						// The game loop (where the magic happens)
+					}
+					```
+				</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					### Beyond The API 
+					<small>Wrapping the API in your own code</small>
+
+					<pre>
+					<code style="border-bottom: dashed 2px white;">
+					// base game object
+					class GameObj {
+						constructor(game, image, width, height) {
+							// Phaser group and display image
+							this.group = game.physics.add.group();
+							this.image = image;
+
+							// dimensions
+							this.width = width;
+							this.height = height;
+						}
+					</code>
+					</pre>
+				</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+							### Callback on Collision
+							Death☠ ️and Patrolling
+						</textarea>
+					</section>
+
+					<section data-markdown>
+							<textarea data-template>
+								### Player Collides with Enemy 
+								```
+								function collisionEnemy(){
+									// Enemy dies if player is on top.
+									// Otherwise, player dies.
+								};
+	
+								player.addCollision(enemies, collisionEnemy);
+								```
+							</textarea>
+						</section>
+
+						<section data-markdown>
+								<textarea data-template>
+									### Enemy Collides With Wall
+									```
+									function patrolEnemy(){
+										// If enemy is touching on left, go right.
+										// Else, go right.
+									};
+		
+									enemies.addCollision(blocks, patrolEnemy);
+									```
+								</textarea>
+							</section>
+
+
+							<section data-markdown>
+									<textarea data-template>
+										### The Illusion Of Travel
+										It's all the same room!
+										```
+										// Teleport player to left edge.
+										if (player.x > world.width)
+											player.x = 0; 
+										
+										// Teleport player to right edge.
+										  if (player.x < 0) {
+											player.x = world.width;
+										```
+									</textarea>
+								</section>
+
+								<section data-markdown>
+										<textarea data-template>
+											### Drawing the Room
+											On out-of-bounds, clear and draw the room.
+										</textarea>
+									</section>
+
+								<section data-markdown>
+										<textarea data-template>
+											### Managing Rooms
+											A list of strings works well.
+											```
+											import room1 from './room_layouts/1.txt';
+											import room2 from './room_layouts/2.txt';
+
+											const rooms = [
+												room1,
+												room2
+											];
+
+											let roomIndex = 0; // Increment, decrement on OOB
+											```
+										</textarea>
+									</section>
+
+									<section data-markdown>
+											<textarea data-template>
+												### Designing a Room
+												This room is empty.
+												```
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												-------------------------
+												```
+											</textarea>
+										</section>
+
+										<section data-markdown>
+												<textarea data-template>
+													### Designing a Room
+													This room has spikes, an enemy, blocks, a platform and a player spawnpoint.
+													```
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													-------------------------
+													@------------------------
+													-----------------------e-
+													bbbbbbb----p-------------
+													bbbbbbb------------------
+													bbbbbbb------------------
+													bbbbbbb------------------
+													bbbbbbb------------------
+													bbbbbbb^^^^^^^^^^^^^^^^^^
+													```
+												</textarea>
+											</section>
+
+										<section data-markdown>
+												<textarea data-template>
+													### Drawing the Room, Token by Token
+													<pre>
+													<code style="border-bottom: dashed 2px white;">
+														  switch (layout[row][col]) {
+															case '@': // player spawnpoint token 
+															  if (playerSpawned !== true) {
+																roomObj = player;
+																playerSpawned = true;
+															  }
+															  break;
+
+															case 'e': // enemies token
+																roomObj = enemies;
+																break;
+
+															case '^': // spike token
+															  roomObj = spikes;
+															  break;
+															  </code>
+															  </pre>
+													
+												</textarea>
+											</section
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

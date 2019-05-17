@@ -31,10 +31,15 @@ const sass = require("gulp-sass");
 function move() {
     return gulp.src("src/storage/*")
         .pipe(gulp.dest("dist/storage"))
+
         .pipe(gulp.src("src/images/**/*"))
         .pipe(gulp.dest("dist/images"))
+
         .pipe(gulp.src("src/phaser-js-game/**/*"))
-        .pipe(gulp.dest("dist/phaser-js-game"));
+        .pipe(gulp.dest("dist/phaser-js-game"))
+
+        .pipe(gulp.src("src/game-development-with-phaser/**/*"))
+        .pipe(gulp.dest("dist/game-development-with-phaser"));
 }
 
 // generate css with sass
