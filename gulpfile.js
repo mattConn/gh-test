@@ -8,10 +8,9 @@ const data = {
             {url: "storage/resume-2019.pdf", text: "Resume"},
             {url: "portfolio.html", text: "Portfolio"},
             {url: "https://github.com/mattConn/", text: "GitHub"},
-            {url: "https://codepen.io/mattConn/", text: "CodePen"},
             {url: "https://www.linkedin.com/in/mattconndev/", text: "LinkedIn"},
             {url: "https://twitter.com/mattconndev", text: "Twitter"},
-            {url: "https://dev.to/mattconn", text: "Blog"}
+            {url: "https://medium.com/@mattconndev", text: "Blog"}
         ],
     portfolio: [
         {text: "Charlie Webpage \"TL;DR\"", url: "http://helloitscharlie.com/tldr", img_fg: `${portfolio_img}/charlie-webpage-tldr-2.png`, img_bg: `${portfolio_img}/charlie-webpage-tldr.png`,},

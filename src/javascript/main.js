@@ -20,10 +20,3 @@ hamburgerBtn.addEventListener("click", function(){
     // toggle mobile navigation
     toggleClass(nav, "navigation--visible");
 });
-
-// navlink click: set <main> to fade out
-navlinks.forEach(function(element){
-    element.addEventListener("click", function(){
-        toggleClass(main, "fade-out");
-    })
-})
