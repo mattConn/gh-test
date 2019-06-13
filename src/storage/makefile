@@ -8,7 +8,8 @@ $(RESUME).pdf : $(RESUME).tex
 $(RESUME).html : $(RESUME).pdf
 	pdf2htmlEX $^
 
-all: $(RESUME).pdf
+all:
+	@echo "Don't use makefile; use resume.html, export pdf."
 
 clean:
 	rm $(RESUME).pdf; rm $(RESUME).html;
