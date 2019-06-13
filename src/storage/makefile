@@ -8,7 +8,7 @@ $(RESUME).pdf : $(RESUME).tex
 $(RESUME).html : $(RESUME).pdf
 	pdf2htmlEX $^
 
-all: $(RESUME).pdf $(RESUME).html
+all: $(RESUME).pdf
 
 clean:
 	rm $(RESUME).pdf; rm $(RESUME).html;
